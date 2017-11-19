@@ -1,0 +1,384 @@
+@charset "utf-8";
+/* CSS Document */
+
+*
+{
+	box-sizing: border-box;
+}
+
+html
+{
+	font-family: Arial;
+}
+
+.row::after
+{
+	content: "";
+	clear: both;
+	display: block;
+}
+
+[class*="col-"]
+{
+	float: left;
+	padding: 15px;
+}
+
+/* -------------- HEADER AREA, MENU, LOGO, RIGHT SIDE CONTACT INFORMATION --------------------------*/
+#header_top
+{
+	background-image: url('images/MASTER WEBSITE TEMPLATE_Banner.jpg');
+	box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.72);
+	background-size: cover;
+	height: 200px;
+	
+	
+}
+
+.logo
+{
+	float: left;
+	margin: 1.4em 1em 1em 1em;
+}
+
+ul.topnav
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+ul.topnav li
+{
+	float: left;
+	list-style-type: none;
+}
+
+ul.topnav li a
+{
+	display: inline-block;
+	margin-top: 5.4em;
+	padding: 1em;
+	transition: 0.3s;
+	font-size: 20px;
+	text-align: center;
+	text-decoration: none;
+	color: #ddd;
+}
+
+ul.topnav li a:hover
+{
+	color: #fff;
+}
+
+.active
+{
+	color: #fff;
+	font-weight: bold;
+	border-bottom: 1px solid #555;
+}
+
+.contact_info
+{
+	float: right;
+	position: absolute;
+	top: 1.6rem;
+	right: 2rem;
+	text-align: right;
+	color: #aaa;
+}
+
+.contact_info a
+{
+	color: #ddd;
+}
+
+.contact_info p
+{
+	margin-bottom: 0.3em;
+}
+
+/* INTRO STYLE RAINIER PICTURE AREA */
+.intro
+{
+	text-align: center;
+	box-shadow: inset 0px 60px 60px -30px rgba(0,0,0,0.5);
+	background-image: url('images/MASTER WEBSITE TEMPLATE2_Body Banner.jpg');
+	background-size: cover;
+	background-position: 50% 50%;
+	
+}
+
+.intro .link_area
+{
+	display: inline-block;
+	margin: 6rem 0;
+	padding: 0 0 1.3rem 0;
+	background: rgba(0,0,0,0.8);
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	box-shadow: 0px 60px 60px -30px rgba(0,0,0,0.5);
+}
+
+.intro h2
+{
+	display: none;
+}
+
+.link_area a 
+{
+  display: inline-block;
+  padding: 1rem 2.8rem 0.5rem 2.8rem;
+  font-size: 3.5rem;
+  color: #ddd;
+}
+
+.link_area a:hover 
+{
+  color: #fff;
+}
+
+.link_area span
+{
+  display: block;
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.link_area span:before,
+.link_area span:after 
+{
+  content: "\2605";
+  margin: 0 0.3rem;
+  vertical-align: 0.2rem;
+  font-size: 1.3rem;
+  color: rgba(255,255,255,0.3);
+}
+
+/* ---- HOURS STYLE ------ */
+.hours
+{
+	margin: 2em 0;
+	text-align: center;
+}
+
+.hours h2
+{
+	margin: 0;
+}
+
+.hours h3, p
+{
+	display: inline;
+	font-size: 1.3em;
+}
+
+.hours a
+{
+	color: #000;
+	text-decoration: none;
+}
+
+.hours h3:after
+{
+	content: "\2605";
+	margin: 0 0.3em;
+	color: rgba(0,0,0,0.2);
+}
+
+.location
+{
+	margin: 2em auto;
+	max-width: 960px;
+	height: 300px;
+	box-sizing: border-box;
+	background-image: url('images/map.jpg');
+	background-size: cover;
+	background-position: 50% 50%;
+}
+
+.address
+{
+	margin-top: 1em;
+	margin-left: 1em;
+	display: inline-block;
+	padding: 2em;
+	background: rgba(255, 255, 255, 0.9);
+	border: 1px solid #ddd;
+}
+
+.links a
+{
+	display: block;
+	margin-top: 0.4em;
+	padding: 0.4em 0;
+	font-size: 0.8em;
+	color: #333;
+}
+
+.links a:hover
+{
+	color: #070;
+}
+
+.location p
+{
+	margin: 0;
+	font-size: 1.5em;
+	font-weight: 300;
+	letter-spacing: 1px;
+	color: #333;
+}
+
+.about
+{
+	background-image: url('images/MASTER WEBSITE TEMPLATE_Hovver block.png');
+	box-shadow: inset 0 0 0 1000px rgba(255,255,255,0.92);
+	padding: 2em 0;
+}
+
+.sub_container
+{
+	padding-left: 25em;
+	padding-right: 25em;
+}
+
+.sub_container p
+{
+	font-size: 1.0em;
+	line-height: 1.4;
+	text-align: center;
+	
+	
+}
+
+.bottom_link
+{
+	font-size: 1em;
+}
+
+.sub_container
+{
+	line-height: 1.4;
+	
+	
+}
+
+.footer
+{
+	margin: 0 auto;
+	padding: 2em 0;
+	background-image: url('images/MASTER WEBSITE TEMPLATE_Banner.jpg');
+	box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.72);
+	font-size: 1.0em;
+	border-top: 1px solid #fff;
+	text-align: center;
+}
+
+.disclaimer p, .powered_by p
+{
+	color: #777;
+}
+
+.social a
+{
+	color: #ddd;
+	margin: 0 1em;
+}
+
+.social a:hover
+{
+	color: #fff;
+}
+
+.disclaimer, .powered_by
+{
+	max-width: 640px;
+	margin: 2em auto 0 auto;
+	font-size: 0.6em;
+	color: #777;
+}
+
+
+/* --------------- MOBILE PHONES -------------------*/
+@media screen and (max-width: 680px)
+{
+		.sub_container
+	{
+		padding-left: 2em;
+		padding-right: 2em;
+	}
+	
+	.location
+	{
+		max-width: 100%;
+		background-image: url('images/map.png');
+	}
+	
+	.address
+	{
+		max-width: 50%;
+		max-height: 50%;
+		padding: 1em;
+		
+	}
+	
+	.address p
+	{
+		font-size: .5em;
+		font-weight: 700;
+	}
+	
+	.footer
+	{
+		padding: .5em;
+	}
+	
+	.contact_info
+	{
+		display: none;
+	}
+ 	/* LOGO OF THE HEADER	*/
+	.logo
+	{
+		width: 30%;	
+		margin-top: 3em;
+	}
+	/* NAVIGATION BAR	*/
+	ul.topnav li a
+	{
+		display: inline;
+		padding: .5em;
+	}
+	
+	ul.topnav 
+	{
+		padding: 2em;
+	}
+	
+	ul.topnav li
+	{
+		padding: .6em;
+	}
+}
+/* ------------ iPAD & TABLETS ---------------------*/
+@media screen and (max-width: 1024px)
+{	.sub_container
+	{
+		padding: 1em 1em;
+	}
+}
+
+/* ------------ iPAD PRO --------------------------- */
+@media screen and (max-width: 1366px)
+{
+	.sub_container
+	{
+		padding: 1em 6em 1em 6em;
+	}
+}
+	
+
+	
+
